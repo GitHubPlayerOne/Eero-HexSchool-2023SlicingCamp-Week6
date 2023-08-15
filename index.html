@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>活動訂票網-首頁</title>
+    
+    <script type="module" crossorigin src="/HexSchool-2023SlicingCamp-Week6/assets/bootstrap.min-59849fb0.js"></script>
+    <link rel="stylesheet" href="/HexSchool-2023SlicingCamp-Week6/assets/bootstrap-c7fc609a.css">
+  </head>
+  <body>
+    <!-- 導覽列區塊 -->
+<header class="mb-4 mb-md-8">
+  <nav class="navbar navbar-expand-lg py-3 py-md-6 border-bottom border-2">
+    <div class="container">
+      <h1 class="m-0">
+        <a class="navbar-brand d-flex align-items-center gap-4 me-0 me-md-12 p-0" href="#">
+          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGoAAABqCAYAAABUIcSXAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAATESURBVHgB7Z0xTFNRFIYvtBo0xldDjCEOJXFwk0Gjmw4aNnUgsukgkUkcCGyEwbhpHIAJooOOxgHYTBx0w+hQNxOH1sQQVLRFo0RRvP+jr719YGmxlPufnC8x9jXPBt/HOfeccx+PlkQisWoU72k1CgUqigQVRUIy/sbyStooO09bMldxrBFFgooiQUWRoKJIUFEkqCgSVBQJKooEFUWCiiJBRZGgokhQUSSoKBJUFAkqigQVRYKKIkFFkaCiSFBRJIgTlcn8NLnsipGGOFGF/B/z2sqSRtIIA5JWTYuRhjhRuexvI/GnHsSJyubkrU9AnCisUfgjDXmpDxElMPcJXKNkpj5R5bmb8qQJEyVKaiEB5EaUMGnCRJWrCPRTkhAlKi+wLI+QFVGFchTlC7KkeS+qnijJO6mv1qYXn88Qid6Lwnj15PF58/zZsmkkkHPrZsF0n10wqZT/icX7rzCwF/HCxT3hBR0e/FL1XLd3qtZHQfqpE/NWVN7cuXvAMECxRg3c2G/SnUkzPrZkjh55/1/N7IT9DEjHZ1y3n3v6TJthgEIUomrqXnv4Gv0RomFm+oepl2tXF81QMSrT6SRNNAGaqg/f+beLFxbrS2/Ph3CNcXGbXLfqw/mIoocPvoXHWJOePD1kmKAqz5ECL1/ZVzrGGhOXFeFWff19ixXFyKSNTqRSJuj6qKn77RXrSjVZAAXIzPT30vHIaMoWJ3sNG5QN76PHBysuNmSNj31dd97a+0ulY0gaGQ0MIy3xBysyPbQK0eKKqAabJFEPrUJxUcvFr/U8n/FmRY16I1Ru0eS7UCiPd9zeCRVdPfdFzNpSftYp51Gal14XiwpUgkHQGrYCqVRL+DfO82Vq0bTUhwudyfwy76yIrH29JmQllOH7bixkQlokr9MeH+vaFR53de0228GOpT4IwXdqdOcJXjHM2CIQ2eXbOlfDiE4Fzfv6vSkmcCEQbfni7V6YhGPbIpqIV8zxYru3mw1s3XI+SnER5dRn012QKL6XKKXHneq34hHlzRqVCteG+tMIZne1iGIvJqirPvRJQ5tM1KPzhms4z2doRcUnEuiT3BTnzgYB+q1LPR9pt+spRcUlYbtio9Q2EHt/1o6Seq0sRuhEYXvDlYRRUrXtivhEAusZtjvYoBKFyq+/71PpGOltsrhPBYJ/lPtxWdju2Gg26DNUorrPLZTWGGx3YE/J7cXcvsadPgDIwjA3On948HPD78PYTmhEoWqLeikUCdjuqJfzNk3Ovewo9UZIgSzFBYUofOejakOUIIpQJGwVSHrz9nD4GWicJ0hSIIUo9EpYY+ZedVS9GcWdImw2UUBUQjo2FRmiyvv9aIyT4mtRo4D0F1a+imoAQR2C1oa+W/l3egNmU4mGqqCZk+1mIPYRO250SUCUKGxPRAREe121IEuU0+SqKBLikwl2hKW+shymbf5aEPeciVCWPhDEf3A/hLRoAjIjSiDi/ledtojQx8ARgF5KH6xIQDqNO1jliRK36ka3GkuD+sduJKO/K54UFUWCiiJBRZGgokhQUSSoKBJUFAkqigQVRYKKIkFFkaCiSFBRJKgoElQUCSqKBBVFgooiQUWRoKJIWHcXkuInGlEkqCgSVBQJfwFJWMcKLx/BoQAAAABJRU5ErkJggg==" class="header__logo img-fluid" alt="#">
+          <p class="d-none d-md-flex align-items-center m-0 fs-4">7TAO <span class="d-none d-lg-block ms-1 fs-9 fw-bold">活動訂票網</span></p>
+        </a>
+      </h1>
+      <form class="d-flex me-md-auto w-55 w-md-40 w-lg-25" role="search">
+        <input class="form-control py-2" type="search" placeholder="探索活動" aria-label="Search">
+        <button class="header__button btn btn-primary" type="submit">
+          <i class="icofont icofont-search-1 text-secondary"></i>
+        </button>
+      </form>
+      <button class="navbar-toggler rounded-1" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav gap-lg-6 text-center pt-4 py-lg-0 ms-auto">
+          <li class=" mb-4 mb-lg-0">
+            <a class="fs-8 p-0" aria-current="page" href="#">
+              <i class="icofont icofont-ui-file"></i>
+              REGISTER
+            </a>
+          </li>
+          <li>
+            <a class="fs-8 p-0" href="#">
+              <i class="icofont icofont-ui-user"></i>
+              LOGIN
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+    <!-- 首頁主要內容 -->
+    <main>
+
+      <!-- 橫幅區塊 -->
+      <section class="container mb-8 mb-md-12">
+        <div class="card">
+          <img src="/HexSchool-2023SlicingCamp-Week6/assets/13-069ddf3b.jpg" class="hmBanner__img card-img" alt="...">
+          <div class="card-img-overlay d-flex flex-column justify-content-between p-0 text-light">
+            <h2 class="card-title py-4 px-11 p-md-12 fs-4 fs-md-2 w-75">19 MAY 2023</h2>
+            <div class="text-center">
+              <h3 class="card-text mb-6 mb-md-4 fs-8 fs-md-5 fw-bold letter-1">隔牆有耳-沒有草東的派對</h3>
+              <p class="d-none d-md-block mx-auto w-65 lh-lg font-NotoSans">你各位聽團仔們！每次想跟朋友一起聽草東專場卻每一次都搶不到票？「草東沒有派對」永遠都是「草東沒有門票」！
+帶上啤酒、野餐墊，讓我們在Live House外面一起開場「沒有草東的派對」吧！</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 活動區塊 -->
+      <section class="container mb-8 mb-md-12">
+        <ul class="row row-cols-3 row-cols-lg-6 g-2 g-lg-4 list-unstyled">
+          <li class="col">
+            <a class="hmActivity__link card justify-content-center align-items-center py-14 py-md-9 border border-2 h-100" href="#">
+              <img src="/HexSchool-2023SlicingCamp-Week6/assets/cate01-a12495cb.svg" class="hmActivity__img img-fluid mb-2 mb-md-3" alt="">
+              <h3 class="fs-9 fs-md-5 mb-0 fw-bold">演出</h3>
+            </a>
+          </li>
+          <li class="col">
+            <a class="hmActivity__link card justify-content-center align-items-center py-14 py-md-9 border border-2 h-100" href="#">
+              <img src="/HexSchool-2023SlicingCamp-Week6/assets/cate02-846b8212.svg" class="hmActivity__img img-fluid mb-2 mb-md-3" alt="">
+              <h3 class="fs-9 fs-md-5 mb-0 fw-bold">聯誼</h3>
+            </a>
+          </li>
+          <li class="col">
+            <a class="hmActivity__link card justify-content-center align-items-center py-14 py-md-9 border border-2 h-100" href="#">
+              <img src="/HexSchool-2023SlicingCamp-Week6/assets/cate03-831ab7b4.svg" class="hmActivity__img img-fluid mb-2 mb-md-3" alt="">
+              <h3 class="fs-9 fs-md-5 mb-0 fw-bold">展覽</h3>
+            </a>
+          </li>
+          <li class="col">
+            <a class="hmActivity__link card justify-content-center align-items-center py-14 py-md-9 border border-2 h-100" href="#">
+              <img src="/HexSchool-2023SlicingCamp-Week6/assets/cate04-957f7830.svg" class="hmActivity__img img-fluid mb-2 mb-md-3" alt="">
+              <h3 class="fs-9 fs-md-5 mb-0 fw-bold">美食</h3>
+            </a>
+          </li>
+          <li class="col">
+            <a class="hmActivity__link card justify-content-center align-items-center py-14 py-md-9 border border-2 h-100" href="#">
+              <img src="/HexSchool-2023SlicingCamp-Week6/assets/cate05-72eeca47.svg" class="hmActivity__img img-fluid mb-2 mb-md-3" alt="">
+              <h3 class="fs-9 fs-md-5 mb-0 fw-bold">戶外</h3>
+            </a>
+          </li>
+          <li class="col">
+            <a class="hmActivity__link card justify-content-center align-items-center py-14 py-md-9 border border-2 h-100 bg-primary" href="./activity.html">
+              <h2 class="mb-0 fs-5 fs-md-3 text-secondary fw-bold lh-sm">探索 <br> 更多</h2>
+            </a>
+          </li>
+        </ul>  
+      </section>
+
+      <!-- 近期活動區塊 -->
+      <section class="container mb-8 mb-md-13">
+        <div class="d-flex justify-content-between align-items-center py-4 px-3 py-md-6 px-md-8 mb-6 mb-md-8 border border-2 border-md-3">
+          <h2 class="mb-0 fs-5 fs-md-1 fw-bold">RECENT</h2>
+          <p class="mb-0 fs-md-4 fw-bold">近期活動</p>
+        </div>
+        <ul class="row row-cols-1 row-cols-md-2 row-cols-lg-3 gy-6 gy-lg-12 list-unstyled">
+          <li class="col">
+            <h3 class="pb-2 mb-4 fs-4 fs-xl-3 border-bottom border-3 border-primary">19 MAY 2023</h3>
+            <img src="/HexSchool-2023SlicingCamp-Week6/assets/01-14f95265.jpg" class="hmEvent__img img-fluid object-fit-cover" alt="">
+            <h4 class="my-2 my-lg-3 fs-8 fs-lg-5 fw-bold">邪典電影派對——房間</h4>
+            <p class="hmEvent__text text-justify lh-lg font-NotoSans">你有聽說過「大災難家」裡面的主角 Tommy Wiseau 製作的「史上最爛的電影」——房間嗎？在美國甚至演變成一種邪教、一種派對的形式，在電影播放的對著螢幕丟湯匙都...</p>
+            <div class="d-flex justify-content-between align-items-center py-2 py-lg-3 border-top border-bottom border-2">
+              <a href="#" class="hmEvent__tag fw-bold">
+                <i class="icofont icofont-star-alt-1 fs-7"></i>
+                <span class="hmEvent__tag-text">社群活動</span>
+              </a>
+              <a href="#" class="hmEvent__link font-NotoSans fw-bold">
+                開賣中
+                <i class="icofont icofont-rounded-double-right fs-7"></i>
+              </a>
+            </div>
+          </li>
+          <li class="col">
+            <h3 class="pb-2 mb-4 fs-4 fs-xl-3 border-bottom border-3 border-primary">23 MAY 2023</h3>
+            <img src="/HexSchool-2023SlicingCamp-Week6/assets/02-c8a7e0c0.jpg" class="hmEvent__img img-fluid object-fit-cover" alt="">
+            <h4 class="my-2 my-lg-3 fs-8 fs-lg-5 fw-bold">怪舞俱樂部</h4>
+            <p class="hmEvent__text text-justify lh-lg font-NotoSans">覺得自己的舞蹈細胞異於常人？每次隨著音樂起舞身邊的人總是露出無法理解的表情？來這裡就對了！來參加這場一起跳舞的聚會，也會在每一次的舞會中選出舞步最怪的...</p>
+            <div class="d-flex justify-content-between align-items-center py-2 py-lg-3 border-top border-bottom border-2">
+              <a href="#" class="hmEvent__tag fw-bold">
+                <i class="icofont icofont-star-alt-1 fs-7"></i>
+                <span class="hmEvent__tag-text">演出</span>
+              </a>
+              <a href="#" class="hmEvent__link font-NotoSans fw-bold">
+                檢視活動
+                <i class="icofont icofont-rounded-double-right fs-7"></i>
+              </a>
+            </div>
+          </li>
+          <li class="col">
+            <h3 class="pb-2 mb-4 fs-4 fs-xl-3 border-bottom border-3 border-primary">30 MAY 2023</h3>
+            <img src="/HexSchool-2023SlicingCamp-Week6/assets/03-4a045f0e.jpg" class="hmEvent__img img-fluid object-fit-cover" alt="">
+            <h4 class="my-2 my-lg-3 fs-8 fs-lg-5 fw-bold">哈利波特馬拉松</h4>
+            <p class="hmEvent__text text-justify lh-lg font-NotoSans">每次身邊有人開啟哈利波特的話題，自己永遠都是聽不懂的那個麻瓜？看大家在討論魁地奇、用咒語鬥法的時候，自己永遠是陪笑的那個人？穿好你的法袍、帶上你的法杖...</p>
+            <div class="d-flex justify-content-between align-items-center py-2 py-lg-3 border-top border-bottom border-2">
+              <a href="#" class="hmEvent__tag fw-bold">
+                <i class="icofont icofont-star-alt-1 fs-7"></i>
+                <span class="hmEvent__tag-text">聯誼</span>
+              </a>
+              <a href="#" class="hmEvent__link font-NotoSans fw-bold">
+                開賣中
+                <i class="icofont icofont-rounded-double-right fs-7"></i>
+              </a>
+            </div>
+          </li>
+          <li class="col">
+            <h3 class="pb-2 mb-4 fs-4 fs-xl-3 border-bottom border-3 border-primary">12 June 2023</h3>
+            <img src="/HexSchool-2023SlicingCamp-Week6/assets/04-d0eeb0aa.jpg" class="hmEvent__img img-fluid object-fit-cover" alt="">
+            <h4 class="my-2 my-lg-3 fs-8 fs-lg-5 fw-bold">皮卡丘排球大賽</h4>
+            <p class="hmEvent__text text-justify lh-lg font-NotoSans">還記得小時候玩的小遊戲嗎？總是有朋友吹噓自己獨孤求敗、只求一敗？是時候該展現真正的實力了！本活動採用瑞士制賽程，以絕對公平的方式進行，是時候該證明自己...</p>
+            <div class="d-flex justify-content-between align-items-center py-2 py-lg-3 border-top border-bottom border-2">
+              <a href="#" class="hmEvent__tag fw-bold">
+                <i class="icofont icofont-star-alt-1 fs-7"></i>
+                <span class="hmEvent__tag-text">遊戲競賽</span>
+              </a>
+              <a href="#" class="hmEvent__link font-NotoSans fw-bold">
+                開賣中
+                <i class="icofont icofont-rounded-double-right fs-7"></i>
+              </a>
+            </div>
+          </li>
+          <li class="col">
+            <h3 class="pb-2 mb-4 fs-4 fs-xl-3 border-bottom border-3 border-primary">25 June 2023</h3>
+            <img src="/HexSchool-2023SlicingCamp-Week6/assets/05-6c2604a6.jpg" class="hmEvent__img img-fluid object-fit-cover" alt="">
+            <h4 class="my-2 my-lg-3 fs-8 fs-lg-5 fw-bold">酒精路跑</h4>
+            <p class="hmEvent__text text-justify lh-lg font-NotoSans">身邊總是有對自己酒量有高度自信的朋友嗎？拉著他/她一起來參加酒精路跑吧！一起拍下第一杯直到倒下為止的照片，一起喝遍市區內各家極具品味的酒吧。</p>
+            <div class="d-flex justify-content-between align-items-center py-2 py-lg-3 border-top border-bottom border-2">
+              <a href="#" class="hmEvent__tag fw-bold">
+                <i class="icofont icofont-star-alt-1 fs-7"></i>
+                <span class="hmEvent__tag-text">社群活動</span>                
+              </a>
+              <a href="#" class="hmEvent__link font-NotoSans fw-bold">
+                開賣中
+                <i class="icofont icofont-rounded-double-right fs-7"></i>
+              </a>
+            </div>
+          </li>
+          <li class="col">
+            <h3 class="pb-2 mb-4 fs-4 fs-xl-3 border-bottom border-3 border-primary">9 July 2023</h3>
+            <img src="/HexSchool-2023SlicingCamp-Week6/assets/06-8506c593.jpg" class="hmEvent__img img-fluid object-fit-cover" alt="">
+            <h4 class="my-2 my-lg-3 fs-8 fs-lg-5 fw-bold">展覽——我的房間</h4>
+            <p class="hmEvent__text text-justify lh-lg font-NotoSans">每個人的房間總會有那麼一兩個能代表自己的物事，或許是再平凡不過的牙刷、馬克杯，或許有那些別人的房間從沒出現過的小東西——那些能定義自己的特別的東西。</p>
+            <div class="d-flex justify-content-between align-items-center py-2 py-lg-3 border-top border-bottom border-2">
+              <a href="#" class="hmEvent__tag fw-bold">
+                <i class="icofont icofont-star-alt-1 fs-7"></i>
+                <span class="hmEvent__tag-text">展覽</span>
+              </a>
+              <a href="#" class="hmEvent__link font-NotoSans fw-bold">
+                開賣中
+                <i class="icofont icofont-rounded-double-right fs-7"></i>
+              </a>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <!-- 線上活動區塊 -->
+      <section class="container mb-8 mb-md-13">
+        <div class="d-flex justify-content-between align-items-center py-4 px-3 py-md-6 px-md-8 mb-6 mb-md-8 border border-2 border-md-3">
+          <h3 class="mb-0 fs-5 fs-md-1 fw-bold">ONLINE</h3>
+          <p class="mb-0 fs-md-4 fw-bold">線上活動</p>
+        </div>
+        <div class="row">
+          <div class="col-lg-7">
+            <img src="/HexSchool-2023SlicingCamp-Week6/assets/online-fe4a9a77.jpg" class="hmOnline__img img-fluid object-fit-cover mb-6 mb-lg-0" alt="">
+          </div>
+          <div class="col-lg-5">
+            <div class="card border-0 h-100">
+              <h4 class="mb-2 mb-lg-4 fs-8 fs-md-4 fw-bold">切特居批踢</h4>
+              <ul class="d-flex gap-1 mb-3 mb-lg-8 list-unstyled">
+                <li>
+                  <a href="#" class="btnBadge__link btn btn-outline-primary py-1 px-4 px-md-6 border border-start-0 fs-10 fw-bold">
+                  競賽
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="btnBadge__link btn btn-outline-primary py-1 px-4 px-md-6 border border-start-0 fs-10 fw-bold">
+                  科技
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="btnBadge__link btn btn-outline-primary py-1 px-4 px-md-6 border border-start-0 fs-10 fw-bold">
+                  有趣
+                  </a>
+                </li>
+              </ul>
+              <div class="card-body p-0">
+                <p class="mb-3 mb-lg-8 lh-lg font-NotoSans text-justify">最近網路上很流行的AI程式 ChatGPT，可以用來聊天或是查詢、整理各種資料，不同的應用方式如雨後春筍般冒出來。 <br> 這個活動讓大家把自己最有特色的使用方法提出來讓大家參考，也會投票出最有趣的用法。 <br> 該讓其他人知道自己使用 ChatGPT 的姿勢才是最特別的那個了！</p>
+              </div>
+              <a href="#" class="button__link-hover btn btn-primary d-flex justify-content-center align-items-center gap-1 py-4 py-lg-2 w-100">
+                查看活動詳情
+                <i class="icofont icofont-rounded-double-right fs-7"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="bg-primary text-secondary fs-md-4 py-4 py-lg-6 mb-12 mb-md-13 fw-bold letter-2 letter-lg-3 text-nowrap overflow-hidden">
+        活動集錦・ALBUMS・活動集錦・ALBUMS・活動集錦・ALBUMS・活動集錦・ALBUMS・活動集錦・ALBUMS・活動集錦・ALBUMS・活動集錦・ALBUMS・活動集錦・ALBUMS
+      </div>
+
+      <!-- 相簿區塊 -->
+      <section class="container mb-12 mb-md-13  px-11">
+        <ul class="row row-cols-1 row-cols-md-2 row-cols-lg-4 gy-11 list-unstyled">
+          <li class="hmAlbum__item col">
+            <div class="card p-3 pb-0 p-md-4 position-relative border-primary border-2">
+              <img src="/HexSchool-2023SlicingCamp-Week6/assets/01-69833549.jpg" class="hmAlbum__img img-fluid mb-3 object-fit-cover" alt="">
+              <h3 class="hmAlbum__title position-absolute top-0 start-50 translate-middle py-2 px-4 fs-9 fw-bold bg-light">社群活動</h3>
+              <h4 class="mb-8 mb-lg-12 fs-8 fw-bold">無聲派對-閉閉嘴dancing</h4>
+            </div>
+          </li>
+          <li class="hmAlbum__item col">
+            <div class="card p-3 pb-0 p-md-4 position-relative border-primary border-2">
+              <img src="/HexSchool-2023SlicingCamp-Week6/assets/02-4ea8adb9.jpg" class="hmAlbum__img img-fluid mb-3 object-fit-cover" alt="">
+              <h3 class="hmAlbum__title position-absolute top-0 start-50 translate-middle py-2 px-4 fs-9 fw-bold bg-light">藝文活動</h3>
+              <h4 class="mb-8 mb-lg-12 fs-8 fw-bold">拯救老店大作戰</h4>
+            </div>
+          </li>
+          <li class="hmAlbum__item col">
+            <div class="card p-3 pb-0 p-md-4 position-relative border-primary border-2">
+              <img src="/HexSchool-2023SlicingCamp-Week6/assets/03-24acffc0.jpg" class="hmAlbum__img img-fluid mb-3 object-fit-cover" alt="">
+              <h3 class="hmAlbum__title position-absolute top-0 start-50 translate-middle py-2 px-4 fs-9 fw-bold bg-light">自我覺察</h3>
+              <h4 class="mb-8 mb-lg-12 fs-8 fw-bold">內觀修行-部落篇</h4>
+            </div>
+          </li>
+          <li class="hmAlbum__item col">
+            <div class="card p-3 pb-0 p-md-4 position-relative border-primary border-2">
+              <img src="/HexSchool-2023SlicingCamp-Week6/assets/04-a72b863b.jpg" class="hmAlbum__img img-fluid mb-3 object-fit-cover" alt="">
+              <h3 class="hmAlbum__title position-absolute top-0 start-50 translate-middle py-2 px-4 fs-9 fw-bold bg-light">聯誼活動</h3>
+              <h4 class="mb-8 mb-lg-12 fs-8 fw-bold">賞櫻野餐</h4>
+            </div>
+          </li>
+        </ul>  
+      </section>
+
+      <div class="bg-primary text-secondary fs-md-4 py-4 py-lg-6 mb-8 mb-md-13 fw-bold letter-2 letter-lg-3 text-nowrap overflow-hidden">
+        活動集錦・ALBUMS・活動集錦・ALBUMS・活動集錦・ALBUMS・活動集錦・ALBUMS・活動集錦・ALBUMS・活動集錦・ALBUMS・活動集錦・ALBUMS・活動集錦・ALBUMS
+      </div>
+
+      <!-- 聯繫我們區塊 -->
+      <section class="container mb-8 mb-md-13">
+        <div class="row row-cols-1 row-cols-md-2 gy-6 gx-0">
+          <div class="col">
+            <div class="card border-primary border-2 h-100">
+              <h2 class="py-4 px-3 px-lg-8 mb-0 border-bottom border-primary border-2 fs-6 fs-md-4 fw-bold">#FOLLOW US</h2>
+              <div class="card-body py-4 px-3 p-lg-8">
+                <p class="font-NotoSans text-justify lh-lg">想第一時間獲得新奇有趣的活動資訊？ <br>
+                  追蹤我們的社群吧！<br>
+                  也歡迎你聯繫我們，提供好玩有趣的活動企劃。<br>
+                </p>
+                <div class="d-flex flex-column gap-6 mt-6 mt-lg-11">
+                  <a href="#" class="font-NotoSans">
+                    <i class="icofont icofont-ui-email p-2 me-4 bg-primary text-light"></i>
+                    7tao.event@gmail.com
+                  </a>
+                  <a href="#" class="font-NotoSans">
+                    <i class="icofont icofont-phone p-2 me-4 bg-primary text-light"></i>
+                    09123123123
+                  </a>
+                  <a href="#" class="font-NotoSans">
+                    <i class="icofont icofont-facebook p-2 me-4 bg-primary text-light"></i>
+                    7TAO七逃
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card border-primary border-2 border-start-md-0 h-100">
+              <h2 class="py-4 px-3 px-lg-8 mb-0 border-bottom border-primary border-2 fs-6 fs-md-4 fw-bold">#subscribe us</h2>
+              <div class="card-body py-4 px-3 p-lg-8">
+                <p class="mb-lg-8 font-NotoSans lh-lg">訂閱電子報送折價券！<br>
+                  定期精選文章資訊及最新優惠資訊，<br>
+                  還不通通給我訂閱起來？<br>
+                </p>
+                <input type="email" class="form-control py-4 px-6 border-2 w-100" placeholder="Email">
+              </div>
+              <a href="#" class="button__link-hover btn btn-primary d-flex justify-content-center align-items-center gap-1  py-4 py-lg-2 w-100">
+                確認訂閱
+                <i class="icofont icofont-rounded-double-right fs-7"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 口號區塊 -->
+      <div class="border-top border-3">
+        <section class="container">
+          <div class="py-12 p-lg-13 text-center">
+            <h2 class="mb-3 mb-lg-4 fs-8 fs-md-4 fw-bold">此刻打盹，你將做夢；此刻學習，你將圓夢</h2>
+            <p class="mb-0 fs-lg-8 fw-bold">——我也不知道誰說的</p>
+          </div>
+        </section>
+      </div>
+
+    </main>
+
+    <!-- 頁尾區塊 -->
+<footer class="py-6 py-md-8 border-top border-3 text-center font-NotoSans">© 7TAO七逃. All Rights Reserved</footer>    
+  </body>
+</html>
