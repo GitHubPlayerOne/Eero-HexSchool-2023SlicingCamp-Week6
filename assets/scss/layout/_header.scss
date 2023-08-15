@@ -1,0 +1,15 @@
+.header__logo {
+  width: 40px;
+  height: 40px;
+}
+
+.header__button:hover .icofont {
+  color: $white !important;
+}
+
+@include media-breakpoint-up(md) {
+  .header__logo {
+    width: 53px;
+    height: 53px;
+  }
+}

@@ -1,0 +1,9 @@
+.button__link-hover:hover {
+  color: $secondary !important;
+}
+
+.button__link-hover.active {
+  background: $primary;
+  color: $secondary !important;
+  cursor: unset;
+}
