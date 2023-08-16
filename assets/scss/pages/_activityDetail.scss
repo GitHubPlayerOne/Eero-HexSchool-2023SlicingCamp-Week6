@@ -1,0 +1,10 @@
+.adBanner__img {
+  width: 100%;
+  height: 180px;
+}
+
+@include media-breakpoint-up(md) {
+  .adBanner__img {
+    height: 550px;
+  }
+}
