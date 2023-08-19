@@ -5,3 +5,58 @@
 .font-Serif {
   font-family: 'Noto Serif TC', serif;
 }
+
+
+
+.event__img {
+  width: 100%;
+  height: 210px;
+}
+
+.event__text {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;  
+  overflow: hidden;
+}
+
+.event__tag:hover {
+  color: $primary !important;
+
+  .event__tag-text {
+    text-decoration: underline;
+  }
+}
+
+.event__link {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    top: 50%;
+    left: -10px;
+    transform: translateY(-50%);
+    display: none;
+    content: '';
+    width: 30px;
+    height: 30px;
+    background-color: $secondary;
+    border-radius: 50%;
+    z-index: -1;
+  }
+
+  &:hover {
+    color: $primary !important;
+
+    &::before {
+      display: block;
+      transform: translateY(-50%);
+    }
+  }
+}
+
+@include media-breakpoint-up(md) {
+  .event__img {
+    height: 255px;
+  }
+}
