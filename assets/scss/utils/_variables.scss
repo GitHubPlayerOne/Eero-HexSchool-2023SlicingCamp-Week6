@@ -300,13 +300,15 @@ $cyans: (
 // scss-docs-start theme-color-variables
 $primary:       #030303;//$blue !default;
 $secondary:     #FBFF22;//$gray-600 !default;
-$tertiary:     #C96464;
+$tertiary:      #C96464;
+$quaternary:    #EBEAE8;   
 $success:       $green !default;
 $info:          $cyan !default;
 $warning:       $yellow !default;
 $danger:        $red !default;
 $light:         $gray-100 !default;
 $dark:          $gray-900 !default;
+
 // scss-docs-end theme-color-variables
 
 // scss-docs-start theme-colors-map
@@ -314,6 +316,7 @@ $theme-colors: (
   "primary":    $primary,
   "secondary":  $secondary,
   "tertiary":   $tertiary,
+  "quaternary": $quaternary,
   "success":    $success,
   "info":       $info,
   "warning":    $warning,
@@ -759,7 +762,7 @@ $table-cell-padding-x-sm:     .25rem !default;
 $table-cell-vertical-align:   top !default;
 
 $table-color:                 var(--#{$prefix}body-color) !default;
-$table-bg:                    var(--#{$prefix}body-bg) !default;
+$table-bg:                    transparent;//var(--#{$prefix}body-bg) !default;
 $table-accent-bg:             transparent !default;
 
 $table-th-font-weight:        null !default;

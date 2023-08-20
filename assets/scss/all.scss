@@ -34,9 +34,9 @@
 @import "../../node_modules/bootstrap/scss/button-group";
 @import "../../node_modules/bootstrap/scss/modal";
 @import "../../node_modules/bootstrap/scss/close";
+@import "../../node_modules/bootstrap/scss/tables";
 
 
-// @import "../../node_modules/bootstrap/scss/tables";
 // @import "../../node_modules/bootstrap/scss/accordion";
 // @import "../../node_modules/bootstrap/scss/breadcrumb";
 // @import "../../node_modules/bootstrap/scss/badge";
@@ -73,4 +73,5 @@
 // pages 自定義
 @import "./pages/index";
 @import "./pages/activityDetail";
+@import "./pages/pay";
 

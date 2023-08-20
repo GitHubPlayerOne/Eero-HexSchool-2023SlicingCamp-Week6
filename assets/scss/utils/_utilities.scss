@@ -202,6 +202,7 @@ $utilities: map-merge(
       responsive: true,
       class: w,
       values: (
+        10: 10%,
         25: 25%,
         40: 40%,
         50: 50%,
@@ -536,6 +537,7 @@ $utilities: map-merge(
       )
     ),
     "line-height": (
+      responsive: ture,
       property: line-height,
       class: lh,
       values: (
@@ -818,6 +820,7 @@ $utilities: map-merge(
         1: 1.2px,
         2: 1.6px,
         3: 3.2px,
+        4: 2.4px,
       )
     )
   ),

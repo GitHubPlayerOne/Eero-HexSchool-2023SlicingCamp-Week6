@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>第六週-活動訂票網-活動詳情</title>
+    <link rel="shortcut icon" href="../assets/images/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="../node_modules/@icon/icofont/icofont.css">
   </head>
   <body>
@@ -13,23 +14,102 @@
     <!-- 活動詳情主要內容 -->
     <main>
 
-      <section class="container mb-4">
-        <div class="row g-2 g-md-6">
-          <div class="col-md-10">
+      <!-- 活動內容區塊 -->
+      <section class="container mb-6 mb-lg-12">
+        <div class="row g-2 g-lg-6">
+          <div class="col-lg-10">
             <img src="../assets/images/event/09.jpg" class="adBanner__img img-fluid p-3 p-md-6 border border-3 object-fit-cover" alt="">
           </div>
-          <div class="col-md-2 d-flex flex-md-column gap-2 gap-lg-6">
-            <p class="py-6 px-4 px-md-0 py-lg-8 mb-0 fs-5 fs-lg-3 border border-3 text-center">2023</p>
-            <div class="flex-grow-1 d-flex justify-content-center align-items-center gap-7 flex-md-column text-center border border-3">
-              <p class="mb-0 fs-6 fs-lg-3"> MAY <br> 19</p>
-              <p class="mb-0 fs-11 fs-lg-12">/</p>
-              <p class="d-flex flex-column mb-0 fs-lg-4">12:00 <br> | <br> 20:00</p>
+          <div class="col-lg-2 d-flex flex-lg-column gap-2 gap-lg-6">
+            <p class="py-6 px-4 px-lg-0 py-lg-8 mb-0 fs-5 fs-md-3 border border-3 text-center">2023</p>
+            <div class="flex-grow-1 d-flex justify-content-evenly align-items-center flex-lg-column text-center border border-3">
+              <p class="mb-0 fs-6 fs-md-3"> MAY <br> 19</p>
+              <p class="mb-0 fs-11 fs-md-12">/</p>
+              <p class="d-flex flex-column mb-0 fs-md-4">12:00 <br> | <br> 20:00</p>
             </div>
           </div>
           </div>
         </div>
+        <h2 class="mt-6 mb-2 mb-md-4 fs-4 fs-md-2 fw-bold letter-2">返老還童-制服聯誼</h2>
+        <p class="mb-6 fs-md-6 lh-lg font-NotoSans">穿上制服，無年齡限制，一起走上街頭、尋找青春才有的純愛心動！</p>
+        <ul class="d-none d-md-flex gap-1 mb-12 list-unstyled">
+          <li>
+            <a href="#" class="btnBadge__link btn btn-outline-primary py-1 px-4 px-md-6 border border-start-0 fs-10 fw-bold">
+            聯誼
+            </a>
+          </li>
+          <li>
+            <a href="#" class="btnBadge__link btn btn-outline-primary py-1 px-4 px-md-6 border border-start-0 fs-10 fw-bold">
+            美食
+            </a>
+          </li>
+          <li>
+            <a href="#" class="btnBadge__link btn btn-outline-primary py-1 px-4 px-md-6 border border-start-0 fs-10 fw-bold">
+            戶外
+            </a>
+          </li>
+          <li>
+            <a href="#" class="btnBadge__link btn btn-outline-primary py-1 px-4 px-md-6 border border-start-0 fs-10 fw-bold">
+            交通旅遊
+            </a>
+          </li>
+        </ul>
+        <div class="p-4 p-lg-8 border border-3 text-justify font-NotoSans bg-quaternary lh-lg">
+          <p>想回到過去？試著讓故事繼續？</p>
+          <p>由戀愛家教「艾德溫」主辦策劃，讓各位在安排好的青春行程中擁有自然的純愛互動體驗，互相餵食餅乾、觀察對方手相，有趣的互動環節讓你/妳怦然心動！制服由主辦方提供，妝髮造型可額外加價購！</p>
+          <p class="mb-0">活動中全程會有隨行攝影師，捕捉你們的純愛互動，拍攝成實境電視劇，讓你們能留下永恆的美好回憶&lt;3</p>
+        </div>
       </section>
 
+      <!-- 購買區塊 -->
+      <section class="container mb-12 mb-lg-13">
+        <div class="d-flex justify-content-between align-items-center py-4 px-3 mb-4 px-lg-12 border border-3">
+          <h2 class="mb-0 fs-5 fs-md-1">TICKET</h2>
+          <p class="mb-0 fs-md-4 fw-bold">購票資訊</p>
+        </div>
+        <table class="table align-middle">
+          <thead>
+            <tr>
+              <th scope="col" class="pb-2 ps-0">活動日期</th>
+              <th scope="col">票種</th>
+              <th scope="col" class="text-end">票價</th>
+              <th scope="col" class="pe-lg-4 text-end text-nowrap">購票</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="fs-10 fs-lg-9 font-NotoSans">
+              <th scope="row" class="ps-0 fw-normal">2023/5/12</th>
+              <td class="pe-0">普通票</td>
+              <td class="text-end">$600</td>
+              <td class="pe-0 pe-lg-4 text-end">
+                <a href="./pay.html" class="buy__link btn btn-outline-primary fs-10 fs-lg-9 text-nowrap fw-bold font-Serif">
+                  <span class="d-none d-md-inline">立即</span>購票
+                </a>
+              </td>
+            </tr>
+            <tr class="fs-10 fs-lg-9 font-NotoSans">
+              <th scope="row" class="ps-0 fw-normal">2023/5/12</th>
+              <td class="pe-0 text-nowrap">改頭換面票（含大改造）</td>
+              <td class="text-end">$3600</td>
+              <td class="pe-0 pe-lg-4 text-end">
+                <a href="./pay.html" class="buy__link btn btn-outline-primary fs-10 fs-lg-9 text-nowrap fw-bold font-Serif">
+                  <span class="d-none d-md-inline">立即</span>購票
+                </a>
+              </td>
+            </tr>
+            <tr class="fs-10 fs-lg-9 font-NotoSans">
+              <th scope="row" class="ps-0 fw-normal">2023/5/12</th>
+              <td class="pe-0"> <span class="d-none d-md-inline">Larry the </span>必勝票（含戀愛小抄）</td>
+              <td class="text-end">$8000</td>
+              <td class="pe-0 pe-lg-4 text-end">
+                <a href="./pay.html" class="buy__link btn btn-outline-primary fs-10 fs-lg-9 text-nowrap fw-bold font-Serif">
+                  <span class="d-none d-md-inline">立即</span>購票
+                </a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
     </main>
 
     <%- include('./layout/footer'); -%>

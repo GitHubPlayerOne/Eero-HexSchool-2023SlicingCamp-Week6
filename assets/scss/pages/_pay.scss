@@ -1,0 +1,20 @@
+.step__number {
+  background-image: url("../images/bg.png");
+  background-color: #F3F1E5;
+
+  &.check {
+    background-image: none;
+  }
+}
+
+.step__list::after {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translateX(-50%);
+  content: '';
+  width: 83%;
+  height: 2px;
+  background: $primary;
+  z-index: -1;
+}

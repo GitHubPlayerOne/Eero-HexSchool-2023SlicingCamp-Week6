@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>第六週-活動訂票網-付款</title>
+    <link rel="shortcut icon" href="../assets/images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="../node_modules/@icon/icofont/icofont.css">
+  </head>
+  <body>
+    <%- include('./layout/header'); -%>
+
+    <!-- 付款主要內容 -->
+    <main>
+      <section class="container pt-6 pb-12 pb-md-13">
+        <div class="row justify-content-center">
+          <div class="col-md-6">
+            <ol class="step__list d-flex justify-content-between list-unstyled position-relative mb-6 mb-md-12">
+              <li class="d-flex flex-column align-items-center fw-bold">
+                <p class="step__number check py-1 px-3 py-md-3 px-md-5 mb-1 mb-2 fs-md-7 border bg-primary text-secondary lh-lg lh-md-1">1</p>
+                <p class="mb-0">訂單確認</p>
+              </li>
+              <li class="d-flex flex-column align-items-center fw-bold">
+                <p class="step__number py-1 px-3 py-md-3 px-md-5 mb-1 mb-2 fs-md-7 border  lh-lg lh-md-1">2</p>
+                <p class="mb-0">結帳付款</p>
+              </li>
+              <li class="d-flex flex-column align-items-center fw-bold">
+                <p class="step__number py-1 px-3 py-md-3 px-md-5 mb-1 mb-2 fs-md-7 border lh-lg lh-md-1">3</p>
+                <p class="mb-0">訂購結果</p>
+              </li>
+            </ol>
+            <h2 class="mb-6 mb-md-8 fs-4 fs-lg-3 fw-bold text-start text-md-center letter-4">返老還童-制服聯誼</h2>
+            <table class="table mb-8 mb-md-12">
+              <tbody>
+                <tr class="border-top">
+                  <th scope="row" class="w-50">日期</th>
+                  <td class="text-end font-NotoSans">2023/5/12</td>
+                </tr>
+                <tr>
+                  <th scope="row" class="w-50">票種</th>
+                  <td class="text-end font-NotoSans text-nowrap">改頭換面票（含大改造）</td>
+                </tr>
+                <tr>
+                  <th scope="row" class="w-50">票價</th>
+                  <td class="text-end font-NotoSans">$8000</td>
+                </tr>
+              </tbody>
+            </table>
+            <h3 class="d-flex flex-column align-items-center fs-5 fw-bold letter-1">
+              <i class="icofont icofont-star-alt-1 mb-4 fs-4"></i>
+              聯絡人資料
+            </h3>
+            <form>
+              <div class="mb-4">
+                <label for="name" class="form-label">聯絡人姓名</label>
+                <input type="email" class="form-control bg-transparent" id="name" placeholder="請輸入聯絡人名稱" aria-describedby="emailHelp">
+              </div>
+              <div class="mb-4">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control bg-transparent" id="email" placeholder="請輸入Email">
+              </div>
+              <div class="mb-6 mb-lg-8">
+                <label for="tel" class="form-label">手機</label>
+                <input type="tel" class="form-control bg-transparent" id="tel" placeholder="請輸入手機號碼">
+              </div>
+              <div class="col-8 mx-auto">
+                <button href="#" class="button__link-hover btn btn-primary fs-7 w-100">
+                確認表單資料
+                <i class="icofont icofont-rounded-double-right fs-7"></i>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <%- include('./layout/footer'); -%>
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>

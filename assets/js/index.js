@@ -1,5 +1,6 @@
 import Swiper from 'swiper/bundle';
 
+// 跑馬燈
 const albumsSwiper = new Swiper('.albums-swiper', {
   allowTouchMove: false,
 
@@ -15,11 +16,12 @@ const albumsSwiper = new Swiper('.albums-swiper', {
   },
 });
 
+// 旋轉木馬
 const bannerSwiper = new Swiper('.banner-swiper', {
   loop: true,
 
   autoplay: {
-    delay: 1000,
+    delay: 3000,
   },
 
   slidesPerView: 1,

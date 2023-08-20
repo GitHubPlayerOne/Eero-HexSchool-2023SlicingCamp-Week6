@@ -7,3 +7,7 @@
   color: $secondary !important;
   cursor: unset;
 }
+
+.button__text-secondary:hover {
+  opacity: 0.8;
+}
