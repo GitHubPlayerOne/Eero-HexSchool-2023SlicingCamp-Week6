@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>第六週-活動訂票網-付款</title>
+    <link rel="shortcut icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGoAAABqCAYAAABUIcSXAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAATESURBVHgB7Z0xTFNRFIYvtBo0xldDjCEOJXFwk0Gjmw4aNnUgsukgkUkcCGyEwbhpHIAJooOOxgHYTBx0w+hQNxOH1sQQVLRFo0RRvP+jr719YGmxlPufnC8x9jXPBt/HOfeccx+PlkQisWoU72k1CgUqigQVRUIy/sbyStooO09bMldxrBFFgooiQUWRoKJIUFEkqCgSVBQJKooEFUWCiiJBRZGgokhQUSSoKBJUFAkqigQVRYKKIkFFkaCiSFBRJIgTlcn8NLnsipGGOFGF/B/z2sqSRtIIA5JWTYuRhjhRuexvI/GnHsSJyubkrU9AnCisUfgjDXmpDxElMPcJXKNkpj5R5bmb8qQJEyVKaiEB5EaUMGnCRJWrCPRTkhAlKi+wLI+QFVGFchTlC7KkeS+qnijJO6mv1qYXn88Qid6Lwnj15PF58/zZsmkkkHPrZsF0n10wqZT/icX7rzCwF/HCxT3hBR0e/FL1XLd3qtZHQfqpE/NWVN7cuXvAMECxRg3c2G/SnUkzPrZkjh55/1/N7IT9DEjHZ1y3n3v6TJthgEIUomrqXnv4Gv0RomFm+oepl2tXF81QMSrT6SRNNAGaqg/f+beLFxbrS2/Ph3CNcXGbXLfqw/mIoocPvoXHWJOePD1kmKAqz5ECL1/ZVzrGGhOXFeFWff19ixXFyKSNTqRSJuj6qKn77RXrSjVZAAXIzPT30vHIaMoWJ3sNG5QN76PHBysuNmSNj31dd97a+0ulY0gaGQ0MIy3xBysyPbQK0eKKqAabJFEPrUJxUcvFr/U8n/FmRY16I1Ru0eS7UCiPd9zeCRVdPfdFzNpSftYp51Gal14XiwpUgkHQGrYCqVRL+DfO82Vq0bTUhwudyfwy76yIrH29JmQllOH7bixkQlokr9MeH+vaFR53de0228GOpT4IwXdqdOcJXjHM2CIQ2eXbOlfDiE4Fzfv6vSkmcCEQbfni7V6YhGPbIpqIV8zxYru3mw1s3XI+SnER5dRn012QKL6XKKXHneq34hHlzRqVCteG+tMIZne1iGIvJqirPvRJQ5tM1KPzhms4z2doRcUnEuiT3BTnzgYB+q1LPR9pt+spRcUlYbtio9Q2EHt/1o6Seq0sRuhEYXvDlYRRUrXtivhEAusZtjvYoBKFyq+/71PpGOltsrhPBYJ/lPtxWdju2Gg26DNUorrPLZTWGGx3YE/J7cXcvsadPgDIwjA3On948HPD78PYTmhEoWqLeikUCdjuqJfzNk3Ovewo9UZIgSzFBYUofOejakOUIIpQJGwVSHrz9nD4GWicJ0hSIIUo9EpYY+ZedVS9GcWdImw2UUBUQjo2FRmiyvv9aIyT4mtRo4D0F1a+imoAQR2C1oa+W/l3egNmU4mGqqCZk+1mIPYRO250SUCUKGxPRAREe121IEuU0+SqKBLikwl2hKW+shymbf5aEPeciVCWPhDEf3A/hLRoAjIjSiDi/ledtojQx8ARgF5KH6xIQDqNO1jliRK36ka3GkuD+sduJKO/K54UFUWCiiJBRZGgokhQUSSoKBJUFAkqigQVRYKKIkFFkaCiSFBRJKgoElQUCSqKBBVFgooiQUWRoKJIWHcXkuInGlEkqCgSVBQJfwFJWMcKLx/BoQAAAABJRU5ErkJggg==" type="image/x-icon">
+    
+    <script type="module" crossorigin src="/HexSchool-2023SlicingCamp-Week6/assets/aos-dcb0a862.js"></script>
+    <link rel="stylesheet" href="/HexSchool-2023SlicingCamp-Week6/assets/aos-9ef1f000.css">
+  </head>
+  <body>
+    <!-- 導覽列區塊 -->
+<header class="sticky-top mb-4 mb-md-8">
+  <nav class="navbar navbar-expand-lg py-3 py-md-6 border-bottom border-3">
+    <div class="container">
+      <h1 class="m-0">
+        <a class="navbar-brand d-flex align-items-center gap-4 me-0 me-md-12 p-0" href="./index.html">
+          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGoAAABqCAYAAABUIcSXAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAATESURBVHgB7Z0xTFNRFIYvtBo0xldDjCEOJXFwk0Gjmw4aNnUgsukgkUkcCGyEwbhpHIAJooOOxgHYTBx0w+hQNxOH1sQQVLRFo0RRvP+jr719YGmxlPufnC8x9jXPBt/HOfeccx+PlkQisWoU72k1CgUqigQVRUIy/sbyStooO09bMldxrBFFgooiQUWRoKJIUFEkqCgSVBQJKooEFUWCiiJBRZGgokhQUSSoKBJUFAkqigQVRYKKIkFFkaCiSFBRJIgTlcn8NLnsipGGOFGF/B/z2sqSRtIIA5JWTYuRhjhRuexvI/GnHsSJyubkrU9AnCisUfgjDXmpDxElMPcJXKNkpj5R5bmb8qQJEyVKaiEB5EaUMGnCRJWrCPRTkhAlKi+wLI+QFVGFchTlC7KkeS+qnijJO6mv1qYXn88Qid6Lwnj15PF58/zZsmkkkHPrZsF0n10wqZT/icX7rzCwF/HCxT3hBR0e/FL1XLd3qtZHQfqpE/NWVN7cuXvAMECxRg3c2G/SnUkzPrZkjh55/1/N7IT9DEjHZ1y3n3v6TJthgEIUomrqXnv4Gv0RomFm+oepl2tXF81QMSrT6SRNNAGaqg/f+beLFxbrS2/Ph3CNcXGbXLfqw/mIoocPvoXHWJOePD1kmKAqz5ECL1/ZVzrGGhOXFeFWff19ixXFyKSNTqRSJuj6qKn77RXrSjVZAAXIzPT30vHIaMoWJ3sNG5QN76PHBysuNmSNj31dd97a+0ulY0gaGQ0MIy3xBysyPbQK0eKKqAabJFEPrUJxUcvFr/U8n/FmRY16I1Ru0eS7UCiPd9zeCRVdPfdFzNpSftYp51Gal14XiwpUgkHQGrYCqVRL+DfO82Vq0bTUhwudyfwy76yIrH29JmQllOH7bixkQlokr9MeH+vaFR53de0228GOpT4IwXdqdOcJXjHM2CIQ2eXbOlfDiE4Fzfv6vSkmcCEQbfni7V6YhGPbIpqIV8zxYru3mw1s3XI+SnER5dRn012QKL6XKKXHneq34hHlzRqVCteG+tMIZne1iGIvJqirPvRJQ5tM1KPzhms4z2doRcUnEuiT3BTnzgYB+q1LPR9pt+spRcUlYbtio9Q2EHt/1o6Seq0sRuhEYXvDlYRRUrXtivhEAusZtjvYoBKFyq+/71PpGOltsrhPBYJ/lPtxWdju2Gg26DNUorrPLZTWGGx3YE/J7cXcvsadPgDIwjA3On948HPD78PYTmhEoWqLeikUCdjuqJfzNk3Ovewo9UZIgSzFBYUofOejakOUIIpQJGwVSHrz9nD4GWicJ0hSIIUo9EpYY+ZedVS9GcWdImw2UUBUQjo2FRmiyvv9aIyT4mtRo4D0F1a+imoAQR2C1oa+W/l3egNmU4mGqqCZk+1mIPYRO250SUCUKGxPRAREe121IEuU0+SqKBLikwl2hKW+shymbf5aEPeciVCWPhDEf3A/hLRoAjIjSiDi/ledtojQx8ARgF5KH6xIQDqNO1jliRK36ka3GkuD+sduJKO/K54UFUWCiiJBRZGgokhQUSSoKBJUFAkqigQVRYKKIkFFkaCiSFBRJKgoElQUCSqKBBVFgooiQUWRoKJIWHcXkuInGlEkqCgSVBQJfwFJWMcKLx/BoQAAAABJRU5ErkJggg==" class="header__logo img-fluid" alt="">
+          <p class="d-none d-md-flex align-items-center m-0 fs-4">7TAO <span class="d-none d-lg-block ms-1 fs-9 fw-bold">活動訂票網</span></p>
+        </a>
+      </h1>
+      <form class="d-flex me-md-auto w-55 w-md-40 w-lg-25" role="search">
+        <input class="form-control py-2 bg-transparent" type="search" placeholder="探索活動" aria-label="Search">
+        <button class="header__button btn btn-primary" type="submit">
+          <i class="icofont icofont-search-1 text-secondary"></i>
+        </button>
+      </form>
+      <button class="navbar-toggler rounded-1" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav gap-lg-6 text-center pt-4 py-lg-0 ms-auto">
+          <li class=" mb-4 mb-lg-0">
+            <a class="fs-8 p-0" aria-current="page" href="#">
+              <i class="icofont icofont-ui-file"></i>
+              REGISTER
+            </a>
+          </li>
+          <li>
+            <a class="fs-8 p-0" href="#">
+              <i class="icofont icofont-ui-user"></i>
+              LOGIN
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+    <!-- 付款主要內容 -->
+    <main>
+      <section class="container pt-6 pb-12 pb-md-13">
+        <div class="row justify-content-center">
+          <div class="col-md-6">
+            <ol class="step__list d-flex justify-content-between list-unstyled position-relative mb-6 mb-md-12">
+              <li class="d-flex flex-column align-items-center fw-bold">
+                <p class="step__number check py-1 px-3 py-md-3 px-md-5 mb-1 mb-2 fs-md-7 border bg-primary text-secondary lh-lg lh-md-1">1</p>
+                <p class="mb-0">訂單確認</p>
+              </li>
+              <li class="d-flex flex-column align-items-center fw-bold">
+                <p class="step__number py-1 px-3 py-md-3 px-md-5 mb-1 mb-2 fs-md-7 border  lh-lg lh-md-1">2</p>
+                <p class="mb-0">結帳付款</p>
+              </li>
+              <li class="d-flex flex-column align-items-center fw-bold">
+                <p class="step__number py-1 px-3 py-md-3 px-md-5 mb-1 mb-2 fs-md-7 border lh-lg lh-md-1">3</p>
+                <p class="mb-0">訂購結果</p>
+              </li>
+            </ol>
+            <h2 class="mb-6 mb-md-8 fs-4 fs-lg-3 fw-bold text-start text-md-center letter-4">返老還童-制服聯誼</h2>
+            <table class="table mb-8 mb-md-12">
+              <tbody>
+                <tr class="border-top">
+                  <th scope="row" class="w-50">日期</th>
+                  <td class="text-end font-NotoSans">2023/5/12</td>
+                </tr>
+                <tr>
+                  <th scope="row" class="w-50">票種</th>
+                  <td class="text-end font-NotoSans text-nowrap">改頭換面票（含大改造）</td>
+                </tr>
+                <tr>
+                  <th scope="row" class="w-50">票價</th>
+                  <td class="text-end font-NotoSans">$8000</td>
+                </tr>
+              </tbody>
+            </table>
+            <h3 class="d-flex flex-column align-items-center fs-5 fw-bold letter-1">
+              <i class="icofont icofont-star-alt-1 mb-4 fs-4"></i>
+              聯絡人資料
+            </h3>
+            <form>
+              <div class="mb-4">
+                <label for="name" class="form-label">聯絡人姓名</label>
+                <input type="email" class="form-control bg-transparent" id="name" placeholder="請輸入聯絡人名稱" aria-describedby="emailHelp">
+              </div>
+              <div class="mb-4">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control bg-transparent" id="email" placeholder="請輸入Email">
+              </div>
+              <div class="mb-6 mb-lg-8">
+                <label for="tel" class="form-label">手機</label>
+                <input type="tel" class="form-control bg-transparent" id="tel" placeholder="請輸入手機號碼">
+              </div>
+              <div class="col-8 mx-auto mb-4">
+                <button href="#" class="button__link-hover btn btn-primary fs-7 w-100">
+                確認表單資料
+                <i class="icofont icofont-rounded-double-right fs-7"></i>
+                </button>
+              </div>
+            </form>
+            <div class="text-center">
+              <a href="#" class="btn btn-outline-dark-gray border-0">取消購票</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- 頁尾區塊 -->
+<footer class="py-6 py-md-8 border-top border-3 text-center font-NotoSans">© 7TAO七逃. All Rights Reserved</footer>    
+  </body>
+</html>
