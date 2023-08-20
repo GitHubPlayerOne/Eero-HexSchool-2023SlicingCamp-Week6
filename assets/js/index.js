@@ -6,7 +6,7 @@ const albumsSwiper = new Swiper('.albums-swiper', {
 
   slidesPerView: 'auto',
 
-  speed: 5000,
+  speed: 10000,
   
   loop: true,
 
