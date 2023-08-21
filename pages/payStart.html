@@ -11,14 +11,14 @@
   <body>
     <%- include('./layout/header'); -%>
 
-    <!-- 付款主要內容 -->
+    <!-- 付款內容 -->
     <main>
       <section class="container pt-6 pb-12 pb-md-13">
         <div class="row justify-content-center">
           <div class="col-md-6">
             <ol class="step__list d-flex justify-content-between list-unstyled position-relative mb-6 mb-md-12">
               <li class="d-flex flex-column align-items-center fw-bold">
-                <p class="step__number check py-1 px-3 py-md-3 px-md-5 mb-1 mb-2 fs-md-7 border bg-primary text-secondary lh-lg lh-md-1">1</p>
+                <p class="step__number active py-1 px-3 py-md-3 px-md-5 mb-1 mb-2 fs-md-7 border bg-primary text-secondary lh-lg lh-md-1">1</p>
                 <p class="mb-0">訂單確認</p>
               </li>
               <li class="d-flex flex-column align-items-center fw-bold">
@@ -64,11 +64,11 @@
                 <label for="tel" class="form-label">手機</label>
                 <input type="tel" class="form-control bg-transparent" id="tel" placeholder="請輸入手機號碼">
               </div>
-              <div class="col-8 mx-auto mb-4">
-                <button href="#" class="button__link-hover btn btn-primary fs-7 w-100">
-                確認表單資料
+              <div class="col-md-8 mx-auto mb-4">
+                <a href="./pay.html" class="button__link-hover btn btn-primary w-100 fs-7 font-NotoSans">
+                  確認表單資料
                 <i class="icofont icofont-rounded-double-right fs-7"></i>
-                </button>
+                </a>
               </div>
             </form>
             <div class="text-center">

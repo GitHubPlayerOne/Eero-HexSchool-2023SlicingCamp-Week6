@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>第六週-活動訂票網-付款</title>
+    <link rel="shortcut icon" href="../assets/images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="../node_modules/@icon/icofont/icofont.css">
+  </head>
+  <body class="d-flex flex-column vh-100">
+    <%- include('./layout/header'); -%>
+
+    <!-- 登入內容 -->
+    <main class="flex-grow-1">
+      <section class="container pt-6 pb-12 pb-md-13">
+        <div class="row justify-content-center">
+          <div class="col-md-4">
+            <h2 class="d-flex flex-column align-items-center mb-4 fs-5 fw-bold letter-1">
+              <i class="icofont icofont-star-alt-1 mb-4 fs-4"></i>
+              會員登入
+            </h2>
+            <form class="needs-validation" novalidate>
+              <div class="mb-4">
+                <label for="name" class="form-label font-NotoSans">帳號</label>
+                <input type="email" class="form-control bg-transparent fs-7" id="name" placeholder="請輸入帳號" aria-describedby="emailHelp" required>
+                <div class="invalid-feedback">
+                  請輸入帳號
+                </div>
+              </div>
+              <div class="mb-6">
+                <label for="email" class="form-label font-NotoSans">密碼</label>
+                <input type="password" class="form-control bg-transparent fs-7" id="email" placeholder="請輸入密碼" required>
+                <div class="invalid-feedback">
+                  請輸入密碼
+                </div>
+              </div>
+              <div>
+                <button type="submit" class="button__link-hover btn btn-primary w-100 fs-7 font-NotoSans">
+                  登入
+                <i class="icofont icofont-rounded-double-right fs-7"></i>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <%- include('./layout/footer'); -%>
+    <script
+      src="https://code.jquery.com/jquery-3.7.0.js"
+      integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM="
+      crossorigin="anonymous">
+    </script>
+    <script type="module" src="../assets/js/login.js"></script>
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>
